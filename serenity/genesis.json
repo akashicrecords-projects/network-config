@@ -1,1 +1,404 @@
-#
+{
+  "genesis_time": "2024-07-07T15:49:05.127395332Z",
+  "chain_id": "eichain_9071-1",
+  "initial_height": "1",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "10000000",
+      "time_iota_ms": "1000"
+    },
+    "evidence": {
+      "max_age_num_blocks": "100000",
+      "max_age_duration": "172800000000000",
+      "max_bytes": "1048576"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    },
+    "version": {}
+  },
+  "app_hash": "",
+  "app_state": {
+    "auth": {
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      },
+      "accounts": [
+        {
+          "@type": "/ethermint.types.v1.EthAccount",
+          "base_account": {
+            "address": "eic1qpvcrrlg6nucku5zxm88lxdfa0cfnms99elcu5",
+            "pub_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          },
+          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+        }
+      ]
+    },
+    "authority": {
+      "policies": {
+        "items": [
+          {
+            "policy_type": "groupEmergency",
+            "address": "eic197s5jdgq0tpra3gzypcqp4de3xjfz5sltujkps"
+          },
+          {
+            "policy_type": "groupOperational",
+            "address": "eic197s5jdgq0tpra3gzypcqp4de3xjfz5sltujkps"
+          },
+          {
+            "policy_type": "groupAdmin",
+            "address": "eic197s5jdgq0tpra3gzypcqp4de3xjfz5sltujkps"
+          }
+        ]
+      }
+    },
+    "authz": {
+      "authorization": []
+    },
+    "bank": {
+      "params": {
+        "send_enabled": [],
+        "default_send_enabled": true
+      },
+      "balances": [
+        {
+          "address": "eic1qpvcrrlg6nucku5zxm88lxdfa0cfnms99elcu5",
+          "coins": [
+            {
+              "denom": "aeic",
+              "amount": "210000000000000000000000000"
+            }
+          ]
+        }
+      ],
+      "supply": [
+        {
+          "denom": "aeic",
+          "amount": "210000000000000000000000000"
+        }
+      ],
+      "denom_metadata": []
+    },
+    "crisis": {
+      "constant_fee": {
+        "denom": "aeic",
+        "amount": "1000"
+      }
+    },
+    "crosschain": {
+      "outTxTrackerList": [],
+      "gasPriceList": [],
+      "CrossChainTxs": [],
+      "lastBlockHeightList": [],
+      "inTxHashToCctxList": [],
+      "in_tx_tracker_list": [],
+      "zeta_accounting": {
+        "aborted_zeta_amount": "0"
+      },
+      "FinalizedInbounds": [],
+      "rate_limiter_flags": {
+        "enabled": false,
+        "window": "0",
+        "rate": "0",
+        "conversions": []
+      }
+    },
+    "distribution": {
+      "params": {
+        "community_tax": "0.020000000000000000",
+        "base_proposer_reward": "0.010000000000000000",
+        "bonus_proposer_reward": "0.040000000000000000",
+        "withdraw_addr_enabled": true
+      },
+      "fee_pool": {
+        "community_pool": []
+      },
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    },
+    "emissions": {
+      "params": {
+        "max_bond_factor": "1.25",
+        "min_bond_factor": "0.75",
+        "avg_block_time": "6.00",
+        "target_bond_ratio": "00.67",
+        "validator_emission_percentage": "00.50",
+        "observer_emission_percentage": "00.25",
+        "tss_signer_emission_percentage": "00.25",
+        "duration_factor_constant": "0.001877876953694702",
+        "observer_slash_amount": "0"
+      },
+      "withdrawableEmissions": []
+    },
+    "evidence": {
+      "evidence": []
+    },
+    "evm": {
+      "accounts": [],
+      "params": {
+        "evm_denom": "aeic",
+        "enable_create": true,
+        "enable_call": true,
+        "extra_eips": [],
+        "chain_config": {
+          "homestead_block": "0",
+          "dao_fork_block": "0",
+          "dao_fork_support": true,
+          "eip150_block": "0",
+          "eip150_hash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "eip155_block": "0",
+          "eip158_block": "0",
+          "byzantium_block": "0",
+          "constantinople_block": "0",
+          "petersburg_block": "0",
+          "istanbul_block": "0",
+          "muir_glacier_block": "0",
+          "berlin_block": "0",
+          "london_block": "0",
+          "arrow_glacier_block": "0",
+          "gray_glacier_block": "0",
+          "merge_netsplit_block": "0",
+          "shanghai_block": "0",
+          "cancun_block": "0"
+        },
+        "allow_unprotected_txs": false
+      }
+    },
+    "feemarket": {
+      "params": {
+        "no_base_fee": false,
+        "base_fee_change_denominator": 8,
+        "elasticity_multiplier": 2,
+        "enable_height": "0",
+        "base_fee": "1000000000",
+        "min_gas_price": "0.000000000000000000",
+        "min_gas_multiplier": "0.500000000000000000"
+      },
+      "block_gas": "0"
+    },
+    "fungible": {
+      "foreignCoinsList": [],
+      "systemContract": null
+    },
+    "genutil": {
+      "gen_txs": [
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "eichain",
+                  "identity": "",
+                  "website": "",
+                  "security_contact": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "eic1qpvcrrlg6nucku5zxm88lxdfa0cfnms99elcu5",
+                "validator_address": "eicvaloper1qpvcrrlg6nucku5zxm88lxdfa0cfnms947y7dn",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "XSy3a2bO9uLx74atAiUIVMWHBfeutY8cO7oGo3Cr/QE="
+                },
+                "value": {
+                  "denom": "aeic",
+                  "amount": "1000000000000000000000000"
+                }
+              }
+            ],
+            "memo": "6912162c1399c68f6916f98734d792f6278fcd20@172.31.15.239:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/ethermint.crypto.v1.ethsecp256k1.PubKey",
+                  "key": "Avdp8IFj+xuUNEkPZe7Kt9Lzn+XqKEBA/rvXOWyf+07D"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "d/s3fYb/jKt5SCWoH9EVNHITNYmleRpBBJ05xeFYsf5GmAxsjjQuAUigPXAyfrwV7Ac9gKZlQatOQqeDcIRKtgA="
+          ]
+        }
+      ]
+    },
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": [],
+      "votes": [],
+      "proposals": [],
+      "deposit_params": {
+        "min_deposit": [
+          {
+            "denom": "aeic",
+            "amount": "10000000"
+          }
+        ],
+        "max_deposit_period": "172800s"
+      },
+      "voting_params": {
+        "voting_period": "172800s"
+      },
+      "tally_params": {
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto_threshold": "0.334000000000000000"
+      }
+    },
+    "group": {
+      "group_seq": "0",
+      "groups": [],
+      "group_members": [],
+      "group_policy_seq": "0",
+      "group_policies": [],
+      "proposal_seq": "0",
+      "proposals": [],
+      "votes": []
+    },
+    "lightclient": {
+      "block_headers": [],
+      "chain_states": [],
+      "verification_flags": {
+        "ethTypeChainEnabled": false,
+        "btcTypeChainEnabled": false
+      }
+    },
+    "observer": {
+      "ballots": [],
+      "observers": {
+        "observer_list": []
+      },
+      "nodeAccountList": [],
+      "crosschain_flags": {
+        "isInboundEnabled": true,
+        "isOutboundEnabled": true,
+        "gasPriceIncreaseFlags": null,
+        "blockHeaderVerificationFlags": null
+      },
+      "params": {
+        "observer_params": [
+          {
+            "chain": {
+              "chain_name": "zeta_mainnet",
+              "chain_id": "907"
+            },
+            "ballot_threshold": "0.660000000000000000",
+            "min_observer_delegation": "1000000000000000000000.000000000000000000",
+            "is_supported": true
+          },
+          {
+            "chain": {
+              "chain_name": "btc_regtest",
+              "chain_id": "18444"
+            },
+            "ballot_threshold": "0.660000000000000000",
+            "min_observer_delegation": "1000000000000000000000.000000000000000000",
+            "is_supported": true
+          },
+          {
+            "chain": {
+              "chain_name": "goerli_localnet",
+              "chain_id": "1337"
+            },
+            "ballot_threshold": "0.660000000000000000",
+            "min_observer_delegation": "1000000000000000000000.000000000000000000",
+            "is_supported": true
+          }
+        ],
+        "admin_policy": [
+          {
+            "policy_type": "group1",
+            "address": "eic197s5jdgq0tpra3gzypcqp4de3xjfz5sltujkps"
+          },
+          {
+            "policy_type": "group2",
+            "address": "eic197s5jdgq0tpra3gzypcqp4de3xjfz5sltujkps"
+          }
+        ],
+        "ballot_maturity_blocks": "100"
+      },
+      "keygen": null,
+      "last_observer_count": null,
+      "chain_params_list": {
+        "chain_params": []
+      },
+      "tss": null,
+      "tss_history": [],
+      "tss_fund_migrators": [],
+      "blame_list": [],
+      "pending_nonces": [],
+      "chain_nonces": [],
+      "nonce_to_cctx": []
+    },
+    "params": null,
+    "slashing": {
+      "params": {
+        "signed_blocks_window": "100000",
+        "min_signed_per_window": "0.500000000000000000",
+        "downtime_jail_duration": "600s",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.010000000000000000"
+      },
+      "signing_infos": [],
+      "missed_blocks": []
+    },
+    "staking": {
+      "params": {
+        "unbonding_time": "1814400s",
+        "max_validators": 31,
+        "max_entries": 7,
+        "historical_entries": 10000,
+        "bond_denom": "aeic",
+        "min_commission_rate": "0.000000000000000000"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": [],
+      "validators": [],
+      "delegations": [],
+      "unbonding_delegations": [],
+      "redelegations": [],
+      "exported": false
+    },
+    "upgrade": {},
+    "vesting": {}
+  }
+}
