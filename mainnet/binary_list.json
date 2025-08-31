@@ -1,0 +1,8 @@
+{
+  "binaries": [
+    {
+      "download_url": "https://github.com/akashicrecords-projects/akchain/releases/download/v2.0.3/akashacored-ubuntu-24-amd64",
+      "binary_location": "cosmovisor/upgrades/v2.0.3/bin/akashacored"
+    }
+  ]
+}

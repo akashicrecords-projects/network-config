@@ -1,0 +1,966 @@
+{
+  "app_name": "akashacored",
+  "app_version": "2.0.2",
+  "genesis_time": "2025-08-30T03:35:41.889535465Z",
+  "chain_id": "akchain_9070-1",
+  "initial_height": 1,
+  "app_hash": null,
+  "app_state": {
+    "auth": {
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      },
+      "accounts": [
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "akasha1vc06er5upck5q85h6quphp4vychz4d96wayzpp",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "akasha157c6d9zkptctteqp5p305lhpfwhc0r0qergq7h",
+          "pub_key": null,
+          "account_number": "1",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "akasha1ywf08wx203uhmatmfkmkjn83vn6tukntqsycvf",
+          "pub_key": null,
+          "account_number": "2",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "akasha19ztlcczuhy8kad0a0p67jplly6qdjdle0g7nnp",
+          "pub_key": null,
+          "account_number": "3",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "akasha1ps6egtqfetprtqrfef0265v9tn8dxgnr5qrd2w",
+          "pub_key": null,
+          "account_number": "4",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "akasha13a6fzhyfmm0j50sf3tmgg8d56uc3h4dvex4l3n",
+          "pub_key": null,
+          "account_number": "5",
+          "sequence": "0"
+        }
+      ]
+    },
+    "authority": {
+      "policies": {
+        "items": [
+          {
+            "policy_type": "groupEmergency",
+            "address": "akasha1qfvhr2ylg6uk3nvr3f68gfgkgyqpdvnw3fh6ej"
+          },
+          {
+            "policy_type": "groupOperational",
+            "address": "akasha1avf0tlh9z79kqf77sf62k4hauzjl95aytck2g9"
+          },
+          {
+            "policy_type": "groupAdmin",
+            "address": "akasha1e6ct0r4ydmvz0tpd6vgtyhpl6x0pcm6wdw0ayk"
+          }
+        ]
+      },
+      "authorization_list": {
+        "authorizations": [
+          {
+            "msg_url": "/zetachain.zetacore.crosschain.MsgRefundAbortedCCTX",
+            "authorized_policy": "groupOperational"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.crosschain.MsgAbortStuckCCTX",
+            "authorized_policy": "groupOperational"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.crosschain.MsgUpdateRateLimiterFlags",
+            "authorized_policy": "groupOperational"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.fungible.MsgDeploySystemContracts",
+            "authorized_policy": "groupOperational"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.fungible.MsgUpdateZRC20LiquidityCap",
+            "authorized_policy": "groupOperational"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.fungible.MsgUpdateZRC20WithdrawFee",
+            "authorized_policy": "groupOperational"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.fungible.MsgUnpauseZRC20",
+            "authorized_policy": "groupOperational"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.observer.MsgResetChainNonces",
+            "authorized_policy": "groupOperational"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.observer.MsgEnableCCTX",
+            "authorized_policy": "groupOperational"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.observer.MsgUpdateGasPriceIncreaseFlags",
+            "authorized_policy": "groupOperational"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.observer.MsgUpdateOperationalFlags",
+            "authorized_policy": "groupOperational"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.observer.MsgUpdateOperationalChainParams",
+            "authorized_policy": "groupOperational"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.crosschain.MsgUpdateERC20CustodyPauseStatus",
+            "authorized_policy": "groupAdmin"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.crosschain.MsgMigrateERC20CustodyFunds",
+            "authorized_policy": "groupAdmin"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.crosschain.MsgMigrateTssFunds",
+            "authorized_policy": "groupAdmin"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.crosschain.MsgUpdateTssAddress",
+            "authorized_policy": "groupAdmin"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.crosschain.MsgWhitelistERC20",
+            "authorized_policy": "groupAdmin"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.fungible.MsgUpdateContractBytecode",
+            "authorized_policy": "groupAdmin"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.fungible.MsgUpdateSystemContract",
+            "authorized_policy": "groupAdmin"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.fungible.MsgUpdateGatewayContract",
+            "authorized_policy": "groupAdmin"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.fungible.MsgRemoveForeignCoin",
+            "authorized_policy": "groupAdmin"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.fungible.MsgDeployFungibleCoinZRC20",
+            "authorized_policy": "groupAdmin"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.fungible.MsgUpdateZRC20Name",
+            "authorized_policy": "groupAdmin"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.observer.MsgUpdateObserver",
+            "authorized_policy": "groupAdmin"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.observer.MsgAddObserver",
+            "authorized_policy": "groupAdmin"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.observer.MsgRemoveChainParams",
+            "authorized_policy": "groupAdmin"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.authority.MsgAddAuthorization",
+            "authorized_policy": "groupAdmin"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.authority.MsgRemoveAuthorization",
+            "authorized_policy": "groupAdmin"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.authority.MsgUpdateChainInfo",
+            "authorized_policy": "groupAdmin"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.authority.MsgRemoveChainInfo",
+            "authorized_policy": "groupAdmin"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.lightclient.MsgEnableHeaderVerification",
+            "authorized_policy": "groupAdmin"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.observer.MsgUpdateChainParams",
+            "authorized_policy": "groupAdmin"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.fungible.MsgBurnFungibleModuleAsset",
+            "authorized_policy": "groupAdmin"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.crosschain.MsgAddInboundTracker",
+            "authorized_policy": "groupEmergency"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.crosschain.MsgAddOutboundTracker",
+            "authorized_policy": "groupEmergency"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.crosschain.MsgRemoveOutboundTracker",
+            "authorized_policy": "groupEmergency"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.crosschain.MsgRemoveInboundTracker",
+            "authorized_policy": "groupEmergency"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.fungible.MsgPauseZRC20",
+            "authorized_policy": "groupEmergency"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.observer.MsgUpdateKeygen",
+            "authorized_policy": "groupEmergency"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.observer.MsgDisableCCTX",
+            "authorized_policy": "groupEmergency"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.observer.MsgDisableFastConfirmation",
+            "authorized_policy": "groupEmergency"
+          },
+          {
+            "msg_url": "/zetachain.zetacore.lightclient.MsgDisableHeaderVerification",
+            "authorized_policy": "groupEmergency"
+          }
+        ]
+      },
+      "chain_info": {
+        "chains": []
+      }
+    },
+    "authz": {
+      "authorization": [
+        {
+          "granter": "akasha1vc06er5upck5q85h6quphp4vychz4d96wayzpp",
+          "grantee": "akasha157c6d9zkptctteqp5p305lhpfwhc0r0qergq7h",
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/zetachain.zetacore.crosschain.MsgVoteGasPrice"
+          },
+          "expiration": null
+        },
+        {
+          "granter": "akasha1vc06er5upck5q85h6quphp4vychz4d96wayzpp",
+          "grantee": "akasha157c6d9zkptctteqp5p305lhpfwhc0r0qergq7h",
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/zetachain.zetacore.crosschain.MsgVoteInbound"
+          },
+          "expiration": null
+        },
+        {
+          "granter": "akasha1vc06er5upck5q85h6quphp4vychz4d96wayzpp",
+          "grantee": "akasha157c6d9zkptctteqp5p305lhpfwhc0r0qergq7h",
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/zetachain.zetacore.crosschain.MsgVoteOutbound"
+          },
+          "expiration": null
+        },
+        {
+          "granter": "akasha1vc06er5upck5q85h6quphp4vychz4d96wayzpp",
+          "grantee": "akasha157c6d9zkptctteqp5p305lhpfwhc0r0qergq7h",
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/zetachain.zetacore.crosschain.MsgAddOutboundTracker"
+          },
+          "expiration": null
+        },
+        {
+          "granter": "akasha1vc06er5upck5q85h6quphp4vychz4d96wayzpp",
+          "grantee": "akasha157c6d9zkptctteqp5p305lhpfwhc0r0qergq7h",
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/zetachain.zetacore.observer.MsgVoteTSS"
+          },
+          "expiration": null
+        },
+        {
+          "granter": "akasha1vc06er5upck5q85h6quphp4vychz4d96wayzpp",
+          "grantee": "akasha157c6d9zkptctteqp5p305lhpfwhc0r0qergq7h",
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/zetachain.zetacore.observer.MsgVoteBlame"
+          },
+          "expiration": null
+        },
+        {
+          "granter": "akasha1vc06er5upck5q85h6quphp4vychz4d96wayzpp",
+          "grantee": "akasha157c6d9zkptctteqp5p305lhpfwhc0r0qergq7h",
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/zetachain.zetacore.observer.MsgVoteBlockHeader"
+          },
+          "expiration": null
+        },
+        {
+          "granter": "akasha1ywf08wx203uhmatmfkmkjn83vn6tukntqsycvf",
+          "grantee": "akasha19ztlcczuhy8kad0a0p67jplly6qdjdle0g7nnp",
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/zetachain.zetacore.crosschain.MsgVoteGasPrice"
+          },
+          "expiration": null
+        },
+        {
+          "granter": "akasha1ywf08wx203uhmatmfkmkjn83vn6tukntqsycvf",
+          "grantee": "akasha19ztlcczuhy8kad0a0p67jplly6qdjdle0g7nnp",
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/zetachain.zetacore.crosschain.MsgVoteInbound"
+          },
+          "expiration": null
+        },
+        {
+          "granter": "akasha1ywf08wx203uhmatmfkmkjn83vn6tukntqsycvf",
+          "grantee": "akasha19ztlcczuhy8kad0a0p67jplly6qdjdle0g7nnp",
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/zetachain.zetacore.crosschain.MsgVoteOutbound"
+          },
+          "expiration": null
+        },
+        {
+          "granter": "akasha1ywf08wx203uhmatmfkmkjn83vn6tukntqsycvf",
+          "grantee": "akasha19ztlcczuhy8kad0a0p67jplly6qdjdle0g7nnp",
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/zetachain.zetacore.crosschain.MsgAddOutboundTracker"
+          },
+          "expiration": null
+        },
+        {
+          "granter": "akasha1ywf08wx203uhmatmfkmkjn83vn6tukntqsycvf",
+          "grantee": "akasha19ztlcczuhy8kad0a0p67jplly6qdjdle0g7nnp",
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/zetachain.zetacore.observer.MsgVoteTSS"
+          },
+          "expiration": null
+        },
+        {
+          "granter": "akasha1ywf08wx203uhmatmfkmkjn83vn6tukntqsycvf",
+          "grantee": "akasha19ztlcczuhy8kad0a0p67jplly6qdjdle0g7nnp",
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/zetachain.zetacore.observer.MsgVoteBlame"
+          },
+          "expiration": null
+        },
+        {
+          "granter": "akasha1ywf08wx203uhmatmfkmkjn83vn6tukntqsycvf",
+          "grantee": "akasha19ztlcczuhy8kad0a0p67jplly6qdjdle0g7nnp",
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/zetachain.zetacore.observer.MsgVoteBlockHeader"
+          },
+          "expiration": null
+        },
+        {
+          "granter": "akasha1vc06er5upck5q85h6quphp4vychz4d96wayzpp",
+          "grantee": "akasha15flvmujmg7fel52cmtvdzgclmh0xmvvhfn5f5m",
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/zetachain.zetacore.emissions.MsgWithdrawEmission"
+          },
+          "expiration": null
+        },
+        {
+          "granter": "akasha1ywf08wx203uhmatmfkmkjn83vn6tukntqsycvf",
+          "grantee": "akasha15flvmujmg7fel52cmtvdzgclmh0xmvvhfn5f5m",
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/zetachain.zetacore.emissions.MsgWithdrawEmission"
+          },
+          "expiration": null
+        }
+      ]
+    },
+    "bank": {
+      "params": {
+        "send_enabled": [],
+        "default_send_enabled": true
+      },
+      "balances": [
+        {
+          "address": "akasha1ps6egtqfetprtqrfef0265v9tn8dxgnr5qrd2w",
+          "coins": [
+            {
+              "denom": "aakc",
+              "amount": "987598000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "akasha1ywf08wx203uhmatmfkmkjn83vn6tukntqsycvf",
+          "coins": [
+            {
+              "denom": "aakc",
+              "amount": "4200000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "akasha19ztlcczuhy8kad0a0p67jplly6qdjdle0g7nnp",
+          "coins": [
+            {
+              "denom": "aakc",
+              "amount": "1000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "akasha1vc06er5upck5q85h6quphp4vychz4d96wayzpp",
+          "coins": [
+            {
+              "denom": "aakc",
+              "amount": "4200000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "akasha13a6fzhyfmm0j50sf3tmgg8d56uc3h4dvex4l3n",
+          "coins": [
+            {
+              "denom": "aakc",
+              "amount": "4000000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "akasha157c6d9zkptctteqp5p305lhpfwhc0r0qergq7h",
+          "coins": [
+            {
+              "denom": "aakc",
+              "amount": "1000000000000000000000"
+            }
+          ]
+        }
+      ],
+      "supply": [
+        {
+          "denom": "aakc",
+          "amount": "1000000000000000000000000000"
+        }
+      ],
+      "denom_metadata": [],
+      "send_enabled": []
+    },
+    "crisis": {
+      "constant_fee": {
+        "denom": "aakc",
+        "amount": "1000"
+      }
+    },
+    "crosschain": {
+      "outboundTrackerList": [],
+      "inboundHashToCctxList": [],
+      "inbound_tracker_list": [],
+      "zeta_accounting": {
+        "aborted_zeta_amount": "0"
+      },
+      "rate_limiter_flags": {
+        "rate": "0",
+        "conversions": []
+      }
+    },
+    "distribution": {
+      "params": {
+        "community_tax": "0.020000000000000000",
+        "base_proposer_reward": "0.000000000000000000",
+        "bonus_proposer_reward": "0.000000000000000000",
+        "withdraw_addr_enabled": true
+      },
+      "fee_pool": {
+        "community_pool": []
+      },
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    },
+    "emissions": {
+      "params": {
+        "validator_emission_percentage": "00.50",
+        "observer_emission_percentage": "00.25",
+        "tss_signer_emission_percentage": "00.25",
+        "observer_slash_amount": "100000000000000000",
+        "ballot_maturity_blocks": "100",
+        "block_reward_amount": "6430041152263374485.930041152263300000",
+        "pending_ballots_deletion_buffer_blocks": "144000"
+      },
+      "withdrawableEmissions": []
+    },
+    "evidence": {
+      "evidence": []
+    },
+    "evm": {
+      "accounts": [],
+      "params": {
+        "evm_denom": "aakc",
+        "extra_eips": [],
+        "allow_unprotected_txs": false,
+        "evm_channels": [],
+        "access_control": {
+          "create": {
+            "access_type": "ACCESS_TYPE_PERMISSIONLESS",
+            "access_control_list": []
+          },
+          "call": {
+            "access_type": "ACCESS_TYPE_PERMISSIONLESS",
+            "access_control_list": []
+          }
+        },
+        "active_static_precompiles": [
+          "0x0000000000000000000000000000000000000100",
+          "0x0000000000000000000000000000000000000400",
+          "0x0000000000000000000000000000000000000800",
+          "0x0000000000000000000000000000000000000801",
+          "0x0000000000000000000000000000000000000802",
+          "0x0000000000000000000000000000000000000803",
+          "0x0000000000000000000000000000000000000804",
+          "0x0000000000000000000000000000000000000805"
+        ]
+      },
+      "preinstalls": []
+    },
+    "feemarket": {
+      "params": {
+        "no_base_fee": false,
+        "base_fee_change_denominator": 8,
+        "elasticity_multiplier": 2,
+        "enable_height": "0",
+        "base_fee": "1000000000.000000000000000000",
+        "min_gas_price": "0.000000000000000000",
+        "min_gas_multiplier": "0.500000000000000000"
+      },
+      "block_gas": "0"
+    },
+    "fungible": {
+      "foreignCoinsList": [],
+      "systemContract": null
+    },
+    "genutil": {
+      "gen_txs": [
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "akcore0",
+                  "identity": "",
+                  "website": "",
+                  "security_contact": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "",
+                "validator_address": "akashavaloper1vc06er5upck5q85h6quphp4vychz4d96gzpa4c",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "ibvuqWmHeMvKf8/crl3bQxmvONba5Pr6dJfRIURPzCc="
+                },
+                "value": {
+                  "denom": "aakc",
+                  "amount": "100000000000000000000"
+                }
+              }
+            ],
+            "memo": "376f2cd73abb1d166d6a4e740b922ef3fad139d6@172.31.37.203:26656",
+            "timeout_height": "0",
+            "unordered": false,
+            "timeout_timestamp": null,
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A8KXHX1WDTyJu0O/gc0W+3UCBKqax/nUV5qkPdOTj9Ss"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [
+                {
+                  "denom": "aakc",
+                  "amount": "4000000000000000"
+                }
+              ],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "FhERRUPidO+MaMklurYr1TmpmEjAYlQlQDL/D3XwtpdI/EyXay7lgYxDp5HQ64XJGB7VWTpPro8ra7He2FMWDw=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "akcore1",
+                  "identity": "",
+                  "website": "",
+                  "security_contact": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "",
+                "validator_address": "akashavaloper1ywf08wx203uhmatmfkmkjn83vn6tukntx0p8cs",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "oiLSIDJBxcsaGdnk/gm6K0SKri5HMtd6WZPawMP5Vio="
+                },
+                "value": {
+                  "denom": "aakc",
+                  "amount": "100000000000000000000"
+                }
+              }
+            ],
+            "memo": "91cf423cf58266f6fd6ce241a77cc7152bdfec14@172.31.40.25:26656",
+            "timeout_height": "0",
+            "unordered": false,
+            "timeout_timestamp": null,
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A3zv6XuyvHvmA3Nsj2FgLTIZtmQP57C6OqtonT51uAo2"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [
+                {
+                  "denom": "aakc",
+                  "amount": "4000000000000000"
+                }
+              ],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "qgGjNIpdRD0+jqcaqwCB+Cj0/+zbxWQ4Q/Lsyj4fI5UR+DCaXOxjL2RTOlwtaQ23ThZ2o+ZQ6QRdvot9zYWKSA=="
+          ]
+        }
+      ]
+    },
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": [],
+      "votes": [],
+      "proposals": [],
+      "deposit_params": {
+        "min_deposit": [
+          {
+            "denom": "aakc",
+            "amount": "100000000000000000"
+          }
+        ]
+      },
+      "voting_params": null,
+      "tally_params": null,
+      "params": {
+        "min_deposit": [
+          {
+            "denom": "aakc",
+            "amount": "10000000"
+          }
+        ],
+        "max_deposit_period": "86400s",
+        "voting_period": "172800s",
+        "quorum": "0.4",
+        "threshold": "0.500000000000000000",
+        "veto_threshold": "0.334000000000000000",
+        "min_initial_deposit_ratio": "0.000000000000000000",
+        "proposal_cancel_ratio": "0.500000000000000000",
+        "proposal_cancel_dest": "",
+        "expedited_voting_period": "86400s",
+        "expedited_threshold": "0.667000000000000000",
+        "expedited_min_deposit": [
+          {
+            "denom": "aakc",
+            "amount": "50000000"
+          }
+        ],
+        "burn_vote_quorum": false,
+        "burn_proposal_deposit_prevote": false,
+        "burn_vote_veto": true,
+        "min_deposit_ratio": "0.010000000000000000"
+      },
+      "constitution": ""
+    },
+    "group": {
+      "group_seq": "0",
+      "groups": [],
+      "group_members": [],
+      "group_policy_seq": "0",
+      "group_policies": [],
+      "proposal_seq": "0",
+      "proposals": [],
+      "votes": []
+    },
+    "lightclient": {
+      "block_headers": [],
+      "chain_states": [],
+      "block_header_verification": {
+        "header_supported_chains": []
+      }
+    },
+    "mint": {
+      "params": {
+        "mint_denom": "aakc"
+      }
+    },
+    "observer": {
+      "observers": {
+        "observer_list": [
+          "akasha1vc06er5upck5q85h6quphp4vychz4d96wayzpp",
+          "akasha1ywf08wx203uhmatmfkmkjn83vn6tukntqsycvf"
+        ]
+      },
+      "nodeAccountList": [
+        {
+          "operator": "akasha1vc06er5upck5q85h6quphp4vychz4d96wayzpp",
+          "granteeAddress": "akasha157c6d9zkptctteqp5p305lhpfwhc0r0qergq7h",
+          "granteePubkey": {
+            "secp256k1": "akashapub1addwnpepqvckrqy6pdkut3ah7x8ys7ymeerz7dleksgke89ygvyxhkycjmfc2j7uc7r"
+          },
+          "nodeStatus": 4
+        },
+        {
+          "operator": "akasha1ywf08wx203uhmatmfkmkjn83vn6tukntqsycvf",
+          "granteeAddress": "akasha19ztlcczuhy8kad0a0p67jplly6qdjdle0g7nnp",
+          "granteePubkey": {
+            "secp256k1": "akashapub1addwnpepqf6vt0s0qcshjwm2lctdffl0etkukd5rftlav8729qzpgk69ryevvehal2z"
+          },
+          "nodeStatus": 4
+        }
+      ],
+      "crosschain_flags": {
+        "isInboundEnabled": true,
+        "isOutboundEnabled": true
+      },
+      "keygen": {
+        "granteePubkeys": [
+          "akashapub1addwnpepqvckrqy6pdkut3ah7x8ys7ymeerz7dleksgke89ygvyxhkycjmfc2j7uc7r",
+          "akashapub1addwnpepqf6vt0s0qcshjwm2lctdffl0etkukd5rftlav8729qzpgk69ryevvehal2z"
+        ],
+        "blockNumber": 55
+      },
+      "chain_params_list": {
+        "chain_params": [
+	 {
+            "ballot_threshold": "0.660000000000000000",
+            "chain_id": "9070",
+            "confirmation_count": "1",
+            "connector_contract_address": "0x0000000000000000000000000000000000000000",
+            "erc20_custody_contract_address": "0x0000000000000000000000000000000000000000",
+            "gas_price_ticker": "5",
+            "gateway_address": "",
+            "inbound_ticker": "2",
+            "is_supported": true,
+            "min_observer_delegation": "1000000000000000000000.000000000000000000",
+            "outbound_schedule_interval": "2",
+            "outbound_schedule_lookahead": "5",
+            "outbound_ticker": "2",
+            "watch_utxo_ticker": "0",
+            "zeta_token_contract_address": "0x0000000000000000000000000000000000000000"
+          },{
+	      "ballot_threshold": "0.660000000000000000",
+		"chain_id": "56",
+		"confirmation_count": "1",
+		"confirmation_params": {
+		    "fast_inbound_count": "14",
+		    "fast_outbound_count": "14",
+		    "safe_inbound_count": "14",
+		    "safe_outbound_count": "14"
+		},
+		"connector_contract_address": "0xe92ac3207de315c6e7d918286ffe26a1f3e10aa4",
+		"erc20_custody_contract_address": "0xb64476a1d7841e6a9522f4b4052d17e83179c733",
+		"gas_price_ticker": "5",
+		"gateway_address": "",
+		"inbound_ticker": "2",
+		"is_supported": true,
+		"min_observer_delegation": "1000000000000000000000.000000000000000000",
+		"outbound_schedule_interval": "2",
+		"outbound_schedule_lookahead": "5",
+		"outbound_ticker": "2",
+		"watch_utxo_ticker": "0",
+		"zeta_token_contract_address": "0x1b2bee2a25e51dc1b9234b0549214778899df183"
+	},{
+		"ballot_threshold": "0.660000000000000000",
+		"chain_id": "8332",
+		"confirmation_count": "1",
+		"confirmation_params": {
+		    "fast_inbound_count": "2",
+		    "fast_outbound_count": "2",
+		    "safe_inbound_count": "2",
+		    "safe_outbound_count": "2"
+		},
+		"connector_contract_address": "0x3b8d85749357456f12f1fbce8637fb60ab344d41",
+		"erc20_custody_contract_address": "0x59ce9f48229f8897c4358fd098a31602cce564c7",
+		"gas_price_ticker": "5",
+		"gateway_address": "",
+		"inbound_ticker": "2",
+		"is_supported": false,
+		"min_observer_delegation": "1000000000000000000000.000000000000000000",
+		"outbound_schedule_interval": "2",
+		"outbound_schedule_lookahead": "5",
+		"outbound_ticker": "2",
+		"watch_utxo_ticker": "0",
+		"zeta_token_contract_address": "0xaac47d4e1fbc79a977a1e5f3ca587010842ad1b3"
+	},{
+		"ballot_threshold": "0.660000000000000000",
+		"chain_id": "1",
+		"confirmation_count": "1",
+		"confirmation_params": {
+		    "fast_inbound_count": "14",
+		    "fast_outbound_count": "14",
+		    "safe_inbound_count": "14",
+		    "safe_outbound_count": "14"
+		},
+		"connector_contract_address": "0x0000000000000000000000000000000000000000",
+		"erc20_custody_contract_address": "0x0000000000000000000000000000000000000000",
+		"gas_price_ticker": "5",
+		"gateway_address": "",
+		"inbound_ticker": "2",
+		"is_supported": false,
+		"min_observer_delegation": "1000000000000000000000.000000000000000000",
+		"outbound_schedule_interval": "2",
+		"outbound_schedule_lookahead": "5",
+		"outbound_ticker": "2",
+		"watch_utxo_ticker": "0",
+		"zeta_token_contract_address": "0x0000000000000000000000000000000000000000"
+	}]
+      },
+      "tss": {},
+      "tss_history": [],
+      "tss_fund_migrators": [],
+      "blame_list": [],
+      "pending_nonces": [],
+      "chain_nonces": [],
+      "nonce_to_cctx": [],
+      "operational_flags": {}
+    },
+    "slashing": {
+      "params": {
+        "signed_blocks_window": "100000",
+        "min_signed_per_window": "0.500000000000000000",
+        "downtime_jail_duration": "600s",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.010000000000000000"
+      },
+      "signing_infos": [],
+      "missed_blocks": []
+    },
+    "staking": {
+      "params": {
+        "unbonding_time": "1814400s",
+        "max_validators": "31",
+        "max_entries": 7,
+        "historical_entries": 10000,
+        "bond_denom": "aakc",
+        "min_commission_rate": "0.05"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": [],
+      "validators": [],
+      "delegations": [],
+      "unbonding_delegations": [],
+      "redelegations": [],
+      "exported": false
+    },
+    "upgrade": {},
+    "vesting": {}
+  },
+  "consensus": {
+    "params": {
+      "block": {
+        "max_bytes": "22020096",
+        "max_gas": "500000000"
+      },
+      "evidence": {
+        "max_age_num_blocks": "100000",
+        "max_age_duration": "172800000000000",
+        "max_bytes": "1048576"
+      },
+      "validator": {
+        "pub_key_types": [
+          "ed25519"
+        ]
+      },
+      "version": {
+        "app": "0"
+      },
+      "abci": {
+        "vote_extensions_enable_height": "0"
+      }
+    }
+  }
+}
